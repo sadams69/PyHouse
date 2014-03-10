@@ -1,7 +1,14 @@
 
 #InsteonAliases = {'dimmer': {'Address' : '1D-D9-3D'}}
 import time
-from PrivateHouse import PrivateHouseEmail
+try:
+    from PrivateHouse import PrivateHouseEmail
+    print "Email Alerts from: ",PrivateHouseEmail['from']
+except:
+    print '*'*100
+    print "You need to create PrivateHouse.py that includes one dictionary called PrivateHouseEmail with 'to', 'from', 'username', and 'password' fields"
+    print '*'*100
+    raise error("Stopping.")
 
 x = time.localtime()
 

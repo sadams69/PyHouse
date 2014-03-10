@@ -179,7 +179,7 @@ class InsteonComm(object):
                                 (device, '\n '.join(clist)))
             device = clist[0]
 
-        import pdb; pdb.set_trace()
+        #import pdb; pdb.set_trace()
         if lock_port is None:
             lock_port = self.DEF_LOCK_PORT
         if lock_port:

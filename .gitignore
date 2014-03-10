@@ -1,3 +1,5 @@
 *.pyc
 *~
 PrivateHouse.py
+logs/*.*
+logs
