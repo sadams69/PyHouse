@@ -1,2 +1,6 @@
 Python Program to control my house with insteon and X10 devices. 
 Started with someone else's insteon controls. 
+HouseDefinition file needs editing to match your insteon setup. 
+Uses SmartHome PowerLinc 2413S serial modem. 
+Need to make sure that the serial port is the same as on your machine. It does not scan. 
+
