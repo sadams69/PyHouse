@@ -1,6 +1,7 @@
 
 #InsteonAliases = {'dimmer': {'Address' : '1D-D9-3D'}}
 import time
+from PrivateHouse import PrivateHouseEmail
 
 x = time.localtime()
 
@@ -77,9 +78,9 @@ else:
                 {'Source' :'DownstairsBathroomSensor', 'Who'   :['DownstairsBathroom']      , 'When' :  [5,10,10./60]  , 'Style' : ['Mood',90,.1]},
                 {'Source' :'Inside Roaming', 'Who'   :['dimmer', 'Living Room']      , 'When' :  [1,24,1./60]  , 'Style' : []}]
 
-    EmailAlerts = [  {'Source' :'FrontDoor'     , 'Who'   :['scott.adams.online@gmail.com']  , 'HouseState' : 'Ready'},
-                     {'Source' :'SideDoor'     , 'Who'   :['scott.adams.online@gmail.com']  , 'HouseState' : 'Ready'},
-                     {'Source' :'GarageSideDoor'     , 'Who'   :['scott.adams.online@gmail.com']  , 'HouseState' : 'Ready'},
-                     {'Source' :'BasementDoor'     , 'Who'   :['scott.adams.online@gmail.com']  , 'HouseState' : 'Ready'}]
+    EmailAlerts = [  {'Source' :'FrontDoor'     , 'Who'   :[PrivateHouseEmail['to']]  , 'HouseState' : 'Ready'},
+                     {'Source' :'SideDoor'     , 'Who'   :[PrivateHouseEmail['to']]  , 'HouseState' : 'Ready'},
+                     {'Source' :'GarageSideDoor'     , 'Who'   :[PrivateHouseEmail['to']]  , 'HouseState' : 'Ready'},
+                     {'Source' :'BasementDoor'     , 'Who'   :[PrivateHouseEmail['to']]  , 'HouseState' : 'Ready'}]
                     
 
