@@ -10,8 +10,7 @@ Program intended for use with the Raspberry pi computer.
 Commands
     xsend A-1-On                -- Send X10 Command
     isend 29-9E-2D off-fast     -- Send Insteon Command
-    listen N                    -- Listen for sensors for X seconds
-    
+    listen N                    -- Listen for sensors for X seconds  
 """
 import errno
 import glob
