@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 #
-# 207 Yaple Road House Automation Routine
+# 
 #
 """
 HousePi automation program.
